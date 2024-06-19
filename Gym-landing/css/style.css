@@ -1,0 +1,101 @@
+@import url('https://fonts.googleapis.com/css2?family=Nunito:ital,wght@0,200..1000;1,200..1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Reddit+Mono:wght@200..900&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Dosis:wght@200..800&display=swap');
+
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    height: 100vh;
+    width: 100vh;
+    left: 5%;
+    right: 5%;
+}
+.container{
+    position: absolute;
+    left: 5%;
+    right: 5%;
+}
+
+header nav{
+    display: flex;
+    justify-content: space-between;
+    font-family: "Nunito", sans-serif;
+    height: 3rem;
+    line-height: 3rem;
+}
+
+
+nav .tagline{
+    font-size: 1.25rem;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+
+.list ul{
+    display: flex;
+    gap: 1rem;
+    list-style: none;
+}
+
+.list button{
+    padding: 0 4px;
+    height: 2rem;
+    line-height: 2rem;
+    text-align: center;
+    background-color: orangered;
+    border: 2px solid lightgray;
+    border-radius: 0.5rem;
+    cursor: pointer;
+    color: white;
+}
+
+main .equipments{
+    display: flex;
+    /* justify-content:flex-start; */
+    align-items:flex-start;
+}
+
+.equipments .img1{
+   max-height: 600px;
+   position: absolute;
+   left: 72%;
+   
+}
+.equipments .img2{
+    max-width: 300px;
+
+}
+
+main h2{
+    width: 80%;
+    margin-top: 5rem;
+    font-family: "Reddit Mono", monospace;
+}
+
+.paragraph p{
+    width: 70%;
+    margin-top: 1rem;
+    padding: 10px;
+    font-family: "Dosis", sans-serif;
+    word-spacing: 0.5rem;
+    line-height: 1.5rem;
+}
+.bootstrap-price{
+    margin-top: 10rem;
+}
+
+.pricing-header p{
+    font-weight: bold;
+}
+footer{
+    margin: 4rem;
+    text-align: center;
+}

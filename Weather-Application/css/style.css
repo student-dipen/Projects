@@ -1,0 +1,137 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    border: none;
+    outline: none;
+    font-family: "Roboto Condensed", sans-serif;
+
+}
+
+body{
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: rgb(141, 131, 120);
+}
+.container{
+    height: min-content;
+    padding: 2rem;
+    width: 400px;
+    background-color: #fff;
+    border-radius: 1rem;
+
+}
+.container .search-box{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.search-box input{
+    background-color: #e6f5fb;
+    padding: 10px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    font-size: 1rem;
+    font-weight: 400;
+    min-width: 85%;
+
+}
+
+.search-box input::placeholder{
+    color: #000;
+}
+.search-box button{
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background-color: #e6f5fb;
+}
+
+.search-box button:hover{
+    color: #fff;
+    background-color: #ababab;
+}
+.weather-body img{
+    width:60%;
+}
+.weather-body{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.weather-body .weather-box{
+    margin-block: 2rem;
+}
+
+.weather-box p{
+    position: relative;
+    font-size:2.25rem;
+    font-weight: 800;
+    margin-bottom: .25rem;
+}
+
+.weather-box p sup{
+    position: absolute;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.weather-box span{
+    margin-top: rem;
+    font-size: 1.3rem;
+    text-transform: capitalize;
+    font-weight: 450;
+}
+
+.humidity-details{
+    display: none;
+    justify-content: space-between;
+    align-items: center;
+    text-transform: capitalize;
+}
+
+ .humidity-details .humidity,.wind{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 7px;
+}
+
+.humidity .humidity-box,.wind-box{
+    display: flex;
+    flex-direction: column;
+}
+
+.humidity,.wind i{
+    font-size: 2rem;
+}
+.humidity-details p{
+    font-size: 1.25rem;
+    font-weight:600;
+}
+.humidity-details span{
+    font-size: 1rem;
+    font-weight: 450;
+}
+
+.container .location-not-found{
+    display: none;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.location-not-found h2{
+    margin-block: 1.5rem;
+}
+.location-not-found img{
+    width: 60%;
+}
+
